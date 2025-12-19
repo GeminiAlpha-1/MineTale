@@ -103,8 +103,8 @@ export const teekConfig = defineTeekConfig({
   },
   // 站点分析配置
   siteAnalytics: [
-    { provider: "google", options: { id: "******" } },
-    { provider: "baidu", options: { id: "******" } },
+    { provider: "google", options: { id: "G-E4KK2M4V47" } },
+    { provider: "baidu", options: { id: "a8cc7d1a22ec067b8b4bb0e237953a66" } },
     { provider: "umami", options: { id: "******", src: "**" } },
   ],
   // 首页 Banner 配置，位于首页顶部

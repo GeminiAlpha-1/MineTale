@@ -31,21 +31,27 @@ features:
     details: 只需 Markdown 即可轻松创建美观的文档站点，配合多维索引快速定位每个知识点。
 ---
 
-## 风格切换
+## 🎨 风格切换
 
-Teek 可以通过配置搭配出各种风格，而当前文档站默认仅演示较简约的文档风格。
-
-在右上角 <TkIcon :icon="readingIcon" :size="20" /> 图标的 <mark>配置切换</mark> 区域可以切换其他风格。因为配置较多，很多的功能并没有完全演示，需要安装 Teek，然后自行探索出自己喜欢的风格。
+`MineTale日志站` 采用 `Teek` 主题，您可以在右上角 <TkIcon :icon="readingIcon" :size="20" /> 图标处调整搭配网站的主题至您喜欢的风格。
 
 ## 💡 反馈交流
 
-在使用过程中有任何问题和想法，请给我提 [Issue](https://github.com/Kele-Bingtang/vitepress-theme-teek/issues)。 你也可以在 Issue 查看别人提的问题和解决方案。
+各位若想加入我们的交流群聊天、催更等，我们为也各位准备了KOOK、QQ频道、QQ群（进群请备注： <mark>MineTale</mark>）：
 
-或者加入我们的交流群（添加我的微信并备注 <mark>进群</mark>）：
+:::tip
+由于我们还负责运营`Minecraft Fabric 1.21.0 Mcoo墨客小筑`服务器，所以您加入的以下交流渠道均为`Mcoo墨客小筑`的交流渠道，您没有来错地方😂
 
-<img src="https://gcore.jsdelivr.net/gh/Kele-Bingtang/static/index/20250412000919.png" alt="添加我微信备注「进群」" style="width: 180px;" />
+为了便于管理,我们就不再建设单独的交流渠道了。
+:::
 
-如果图片链接失效，可以在微信右上角 -> 添加朋友，然后搜索 `teekers` 来添加我的微信。
+[KOOK](https://kook.vip/wsbP8G)
+
+[QQ频道](https://pd.qq.com/s/6x52hd37b)
+
+[QQ群](https://qm.qq.com/q/wUWWcrlsDm)
+
+
 
 <script setup lang="ts">
 import { onMounted } from "vue";

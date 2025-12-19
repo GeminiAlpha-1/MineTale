@@ -2,18 +2,56 @@ import { defineTeekConfig } from "vitepress-theme-teek/config";
 import { version } from "vitepress-theme-teek/es/version";
 
 export const teekConfig = defineTeekConfig({
-  teekHome: false, // 是否开启博客首页
-  vpHome: true, // 是否隐藏 VP 首页
+  teekHome: true, // 是否启用 Teek 的首页风格（博客风格）
+  vpHome: false, // 是否隐藏 VP 首页
+  loading: true,
   sidebarTrigger: true, // 是否开启侧边栏折叠功能
-  author: { name: "Teeker", link: "https://github.com/Kele-Bingtang" },
+  author: { name: "MineTale", link: "https://github.com/GeminiAlpha-1" },
+  wallpaper: {
+    enabled: false,
+    hideBanner: true
+  },
+  // 站点分析配置
+  siteAnalytics: [
+    { provider: "google", options: { id: "G-E4KK2M4V47" } },
+    { provider: "baidu", options: { id: "a8cc7d1a22ec067b8b4bb0e237953a66" } },
+  ],
   footerInfo: {
     theme: {
       name: `Theme By Teek@${version}`,
     },
     copyright: {
-      createYear: 2025,
-      suffix: "Teek",
+      createYear: 2020,
+      suffix: "Mcoo 墨客小筑",
     },
+    customHtml: "<span id=\"runtime\"></span>",
+    topMessage: [] // 清空徽章徽标
+  },
+  docAnalysis: {
+    createTime: "2025-12-19",
+    statistics: {
+      provider: "busuanzi"
+    }
+  },
+  friendLink: {
+    list: [
+      {
+        name: "Mcoo墨客小筑",
+        desc: "综合性的文档站，什么都会写一点",
+        avatar: "/logo.png",
+        link: "http://mcoo.top/"
+      }
+    ],
+    autoScroll: true
+  },
+  social: [], // 清空社交媒体图标
+  post: {
+    postStyle: "card"
+  },
+  homeCardListPosition: "left",
+  // 隐藏首页 banner
+  banner: {
+    enabled: false
   },
   codeBlock: {
     copiedDone: (TkMessage) => TkMessage.success("复制成功！"),

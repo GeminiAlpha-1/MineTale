@@ -18,6 +18,7 @@ import "vitepress-theme-teek/theme-chalk/tk-fade-up-animation.css"; // 首次加
 
 import "./styles/code-bg.scss";
 import "./styles/iframe.scss";
+import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
   extends: Teek,

@@ -1,3 +1,9 @@
 :root {
   --vp-code-block-bg: var(--tk-fill-color-light);
 }
+
+/* 修复时间轴文字颜色问题 */
+:root:not(.dark) .timeline-dot {
+  color: var(--vp-c-text-1) !important;
+  font-size: inherit !important;
+}
