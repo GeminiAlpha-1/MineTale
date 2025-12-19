@@ -109,7 +109,7 @@ export default defineConfig({
     editLink: {
       text: "在 GitHub 上编辑此页",
       pattern:
-        "https://github.com/GeminiAlpha-1/MineTale/edit/master/docs/:path",
+        "https://github.com/GeminiAlpha-1/MineTale/blob/master/docs/:path",
     },
   },
   vite: {
