@@ -10,7 +10,7 @@ const description = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/MineTale/',
+  base: '/',
   extends: teekConfig,
   title: "vitepress-theme-teek",
   description: description,
