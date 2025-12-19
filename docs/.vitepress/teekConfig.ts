@@ -28,7 +28,7 @@ export const teekConfig = defineTeekConfig({
     topMessage: [] // 清空徽章徽标
   },
   docAnalysis: {
-    createTime: "2025-12-19",
+    createTime: "2025-12-13",
     statistics: {
       provider: "busuanzi"
     }
