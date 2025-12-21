@@ -1,5 +1,6 @@
 import Teek from "vitepress-theme-teek";
 import TeekLayoutProvider from "./components/TeekLayoutProvider.vue";
+import BiliVideo from "./components/BiliVideo.vue";
 
 // Teek 在线主题包引用（需安装 Teek 在线版本）
 import "vitepress-theme-teek/index.css";
@@ -23,4 +24,8 @@ import "vitepress-markdown-timeline/dist/theme/index.css";
 export default {
   extends: Teek,
   Layout: TeekLayoutProvider,
+  enhanceApp(ctx) {
+    // 注册全局组件
+    ctx.app.component('BiliVideo', BiliVideo);
+  }
 };
