@@ -57,9 +57,26 @@ export const teekConfig = defineTeekConfig({
     copiedDone: (TkMessage) => TkMessage.success("复制成功！"),
   },
   articleShare: { enabled: true },
+  articleAnalyze: {
+    showInfo: true,
+    showIcon: true,
+    wordCount: true,
+    readingTime: true
+  },
   vitePlugins: {
     sidebarOption: {
       initItems: false,
     },
+    permalink: true,
+    permalinkOption: {},
+    docAnalysis: true,
+    docAnalysisOption: {
+      include: ['**/*.md'],
+      exclude: ['@pages/**/*.md', '**/.vitepress/**/*.md'],
+      // 确保Mcoo目录下的文章被包含在分析中
+      // 启用字数统计和阅读时间计算
+      wordCount: true,
+      readingTime: true
+    }
   },
 });

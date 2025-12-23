@@ -93,7 +93,8 @@ export default defineConfig({
       next: "下一页",
     },
     nav: [
-      { text: "首页", link: "/" },
+      { text: "MineTale", link: "/" },
+      { text: "Mcoo", link: "/mcoo" },
       { text: "归档", link: "/archives" },
       { text: "图床", link: "https://imghub.mcoo.top/" }
     ],

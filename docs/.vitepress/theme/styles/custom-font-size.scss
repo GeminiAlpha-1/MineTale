@@ -1,0 +1,76 @@
+/* 自定义样式 - 调整正文字体大小 */
+
+/* VitePress 内容区域字体大小 */
+.vp-doc, 
+.vp-doc div, 
+.vp-doc span, 
+.vp-doc section,
+.content-container .content,
+.main .content,
+.theme-default-content,
+.markdown-body {
+  font-size: 18px !important; /* 默认是14px，调整为18px */
+  line-height: 1.7 !important;
+}
+
+/* 文章内容区域的段落 */
+.vp-doc p, 
+.content p, 
+.content-container p,
+.main .content p,
+.theme-default-content p,
+.markdown-body p {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1em !important;
+}
+
+/* 列表项字体大小 */
+.vp-doc ul, .vp-doc ol {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.vp-doc li {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* 引用块字体大小 */
+.vp-doc blockquote {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+/* 表格字体大小 */
+.vp-doc table {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.vp-doc th, .vp-doc td {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+/* 代码块字体大小 */
+.vp-doc div[class*="language-"] {
+  font-size: 15px !important;
+}
+
+/* 行内代码字体大小 */
+.vp-doc code:not([class*="language-"]) {
+  font-size: 16px !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .vp-doc, .vp-doc p, .vp-doc ul, .vp-doc ol, .vp-doc li, .vp-doc blockquote {
+    font-size: 17px !important;
+  }
+  
+  .vp-doc table, .vp-doc th, .vp-doc td {
+    font-size: 15px !important;
+  }
+}
