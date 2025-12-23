@@ -7,8 +7,8 @@ sidebar: false
 ---
 
 <div class="page-header">
-  <h1 class="page-title">Mcoo 墨客小筑</h1>
-  <p class="page-description">这里展示了所有与Mcoo相关的文章。</p>
+  <h1 class="page-title">Mcoo 档案馆</h1>
+  <p class="page-description">👋欢迎来到 Mcoo档案馆</p>
 </div>
 
 <style scoped>
