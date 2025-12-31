@@ -1,5 +1,9 @@
 /* .vitepress\theme\styles\blur.css */
 :root {
+    /* 正文字体大小 */
+    --vp-font-size-base: 14px;
+}
+
 /* 首页下滑后导航透明 */
 .VPNavBar:not(.has-sidebar):not(.home.top) {
     background-color: rgba(255, 255, 255, 0);
@@ -38,5 +42,4 @@
 .VPLocalNav {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
-}
 }
