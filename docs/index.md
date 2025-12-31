@@ -37,7 +37,7 @@ features:
 
 ## 💡 反馈交流
 
-各位若想加入我们的交流群聊天、催更等，我们为也各位准备了KOOK、QQ频道、QQ群（进群请备注： <mark>MineTale</mark>）：
+各位若想加入我们的交流群聊天、催更等，我们为也各位准备了KOOK、QQ频道、QQ群（进群可备注： <mark>MineTale</mark>，这样管理员看到后可能会更快地通过群申请）：
 
 :::tip
 由于我们还负责运营`Minecraft Fabric 1.21.0 Mcoo墨客小筑`服务器，所以您加入的以下交流渠道均为`Mcoo墨客小筑`的交流渠道，您没有来错地方😂
@@ -45,11 +45,11 @@ features:
 为了便于管理,我们就不再建设单独的交流渠道了。
 :::
 
+[QQ群](https://qm.qq.com/q/3wI5CmWoco)
+
 [KOOK](https://kook.vip/wsbP8G)
 
 [QQ频道](https://pd.qq.com/s/6x52hd37b)
-
-[QQ群](https://qm.qq.com/q/wUWWcrlsDm)
 
 
 

@@ -60,6 +60,20 @@ sidebar: false
   background-color: var(--vp-c-bg);
   transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
+}
+
+.mcoo-post-item.sticky {
+  border-color: var(--vp-c-brand);
+  background: linear-gradient(135deg, var(--vp-c-bg) 0%, rgba(var(--vp-c-brand-rgb), 0.05) 100%);
+}
+
+.mcoo-post-item.sticky::before {
+  content: '📌';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 20px;
 }
 
 .mcoo-post-item:hover {
@@ -283,6 +297,9 @@ onMounted(async () => {
             const articleMatch = frontmatterStr.match(/article:\s*(.+)/)
             const article = articleMatch ? articleMatch[1].trim().replace(/^["']|["']$/g, '') : ''
             
+            const stickyMatch = frontmatterStr.match(/sticky:\s*(.+)/)
+            const sticky = stickyMatch ? stickyMatch[1].trim().replace(/^["']|["']$/g, '') : ''
+            
             // 解析categories
             const categoriesMatch = frontmatterStr.match(/categories:\s*\n((?:\s*-\s*.+\r?\n?)*)/)
             const categories = categoriesMatch 
@@ -301,6 +318,7 @@ onMounted(async () => {
               author,
               permalink,
               article,
+              sticky,
               description,
               categories,
               tags
@@ -324,6 +342,7 @@ onMounted(async () => {
               category: frontmatter.categories?.[0] || 'Mcoo',
               tags: frontmatter.tags || [],
               description: frontmatter.description || '暂无描述',
+              sticky: frontmatter.sticky === 'true',
               // 用于排序
               timestamp: new Date(frontmatter.date || '2025-12-23').getTime()
             }
@@ -344,8 +363,12 @@ onMounted(async () => {
         }
     }
     
-    // 按时间排序（最新的在前）
-    posts.sort((a, b) => b.timestamp - a.timestamp)
+    // 按时间排序（置顶文章在前，然后按时间最新的在前）
+    posts.sort((a, b) => {
+      if (a.sticky && !b.sticky) return -1
+      if (!a.sticky && b.sticky) return 1
+      return b.timestamp - a.timestamp
+    })
     
     console.log('Final posts array:', posts)
     
@@ -426,7 +449,13 @@ const getCategoryColor = (tag) => {
 </script>
 
 <div class="mcoo-post-list">
-  <div v-for="post in mcooPosts" :key="post.title" class="mcoo-post-item" @click="handleCardClick(post.link)">
+  <div 
+    v-for="post in mcooPosts" 
+    :key="post.title" 
+    class="mcoo-post-item"
+    :class="{ sticky: post.sticky }"
+    @click="handleCardClick(post.link)"
+  >
     <div class="mcoo-post-title">
       <a :href="post.link" @click.stop>{{ post.title }}</a>
     </div>
