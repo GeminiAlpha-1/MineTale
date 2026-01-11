@@ -49,8 +49,6 @@ features:
 
 [KOOK](https://kook.vip/wsbP8G)
 
-[QQ频道](https://pd.qq.com/s/6x52hd37b)
-
 
 
 <script setup lang="ts">

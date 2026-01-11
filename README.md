@@ -1,7 +1,7 @@
 # MineTale 日志站
 
 <p align="center">
-  <img src="docs/public/logo.svg" alt="MineTale Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/GeminiAlpha-1/MineTale/master/docs/public/logo.svg" alt="MineTale Logo" width="120" height="120">
 </p>
 
 <p align="center">
@@ -102,7 +102,6 @@ MineTale/
 |------|------|
 | QQ 群 | [加入QQ群](https://qm.qq.com/q/3wI5CmWoco) |
 | KOOK | [加入KOOK](https://kook.vip/wsbP8G) |
-| QQ 频道 | [加入QQ频道](https://pd.qq.com/s/6x52hd37b) |
 
 </div>
 
