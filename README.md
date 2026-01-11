@@ -1,15 +1,9 @@
 # MineTale 日志站
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GeminiAlpha-1/MineTale/master/docs/public/logo.svg" alt="MineTale Logo" width="120" height="120">
-</p>
-
-<p align="center">
   <a href="https://minetale.top">🌐 访问网站</a>
   ·
   <a href="https://github.com/GeminiAlpha-1/MineTale/issues">🐛 报告问题</a>
-  ·
-  <a href="https://github.com/GeminiAlpha-1/MineTale/discussions">💬 讨论交流</a>
 </p>
 
 ---
