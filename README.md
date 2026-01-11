@@ -1,0 +1,125 @@
+# MineTale 日志站
+
+<p align="center">
+  <img src="docs/public/logo.svg" alt="MineTale Logo" width="120" height="120">
+</p>
+
+<p align="center">
+  <a href="https://minetale.top">🌐 访问网站</a>
+  ·
+  <a href="https://github.com/GeminiAlpha-1/MineTale/issues">🐛 报告问题</a>
+  ·
+  <a href="https://github.com/GeminiAlpha-1/MineTale/discussions">💬 讨论交流</a>
+</p>
+
+---
+
+## 📖 项目介绍
+
+MineTale日志站是一个专注于 **Minecraft** 和 **Hytale** 游戏的文档与资讯平台。
+
+我们致力于收集与分享：
+- 🎮 官方消息与更新日志
+- 📝 游戏攻略与技巧
+- 🔧 插件与 Mod 使用指南
+- 💡 服务器管理与运维经验
+
+## ✨ 主要特性
+
+- 📚 **结构化知识库** - 自动生成侧边栏、目录页、索引页
+- 🎨 **个性化主题** - 支持多种主题风格切换
+- 📱 **响应式设计** - 完美适配桌面端和移动端
+- 🔍 **强大的搜索** - 支持本地全文搜索
+- 📊 **数据可视化** - 集成图表与时间线功能
+
+## 🛠 技术栈
+
+- **框架**: [VitePress](https://vitepress.dev/)
+- **主题**: [Teek](https://github.com/nekowinston/vitepress-theme-teek)
+- **部署**: GitHub Pages
+- **域名**: [minetale.top](https://minetale.top)
+
+## 🚀 快速开始
+
+### 本地开发
+
+```bash
+# 安装依赖
+pnpm install
+
+# 启动开发服务器
+pnpm docs:dev
+
+# 构建生产版本
+pnpm docs:build
+
+# 预览构建结果
+pnpm docs:preview
+```
+
+### 项目结构
+
+```
+MineTale/
+├── docs/
+│   ├── .vitepress/          # VitePress 配置
+│   │   ├── config.ts         # 主配置
+│   │   └── theme/            # 主题配置
+│   ├── 01.MineTale/          # Minecraft 相关文档
+│   ├── 02.Mcoo/              # Mcoo 服务器文档
+│   ├── @pages/               # 自定义页面
+│   └── index.md              # 首页
+├── public/                   # 静态资源
+└── package.json
+```
+
+## 🤝 贡献指南
+
+我们欢迎任何形式的贡献！无论是修正错别字、添加新内容还是报告问题。
+
+### 贡献方式
+
+1. **Fork** 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 发起 **Pull Request**
+
+### 内容规范
+
+- 使用中文编写，保持语言统一
+- 遵循 Markdown 规范
+- 添加适当的分类和标签
+- 引用来源时注明出处
+
+## 📢 交流社区
+
+加入我们的社区，与其他玩家和开发者交流：
+
+<div align="center">
+
+| 平台 | 链接 |
+|------|------|
+| QQ 群 | [加入QQ群](https://qm.qq.com/q/3wI5CmWoco) |
+| KOOK | [加入KOOK](https://kook.vip/wsbP8G) |
+| QQ 频道 | [加入QQ频道](https://pd.qq.com/s/6x52hd37b) |
+
+</div>
+
+> 📌 **提示**: 以上交流渠道同时也是 Mcoo 墨客小筑服务器的交流渠道，Mcoo 是一个 Minecraft Fabric 1.21.0 服务器。
+
+## 📄 许可证
+
+本项目采用 MIT 许可证开源，详情请参阅 [LICENSE](LICENSE) 文件。
+
+## 🙏 致谢
+
+- [VitePress](https://vitepress.dev/) - 快速、强大的静态站点生成器
+- [Teek Theme](https://github.com/nekowinston/vitepress-theme-teek) - 精美的主题设计
+- [所有贡献者](https://github.com/GeminiAlpha-1/MineTale/graphs/contributors)
+
+---
+
+<p align="center">
+  Made with ❤️ by MineTale Team
+</p>
