@@ -39,7 +39,7 @@ export const teekConfig = defineTeekConfig({
         name: "Mcoo墨客小筑",
         desc: "综合性的文档站，什么都会写一点",
         avatar: "/logo.png",
-        link: "http://mcoo.top/"
+        link: "http://www.mcoo.top/"
       }
     ],
     autoScroll: true
