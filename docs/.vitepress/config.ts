@@ -94,9 +94,9 @@ export default defineConfig({
     },
     nav: [
       { text: "MineTale", link: "/" },
-      { text: "Mcoo", link: "/mcoo" },
+      { text: "Mcoo 官网", link: "https://www.mcoo.top/" },
       { text: "归档", link: "/archives" },
-      { text: "图床", link: "https://imghub.mcoo.top/" }
+      { text: "Mcoo 图床", link: "https://imghub.mcoo.top/" }
     ],
     socialLinks: [
       {
